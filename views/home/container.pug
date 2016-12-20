@@ -1,0 +1,16 @@
+.container
+  .row
+    .col-md-1.main-menu-div
+        include menubar.pug
+      
+    .col-md-2.game-profile-div
+        player-avatar
+      
+    .col-md-6.game-board-div
+        div(ng-view='')
+      
+    .col-md-1.game-timer-options-div
+        timer(interval='1000', countdown='360') {{countdown}}
+      
+    .col-md-2.secret-tabs-div
+        include tabbed-panes.pug

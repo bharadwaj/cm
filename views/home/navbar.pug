@@ -1,0 +1,5 @@
+nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse
+    if user.local.email
+        a.navbar-brand(href='#')= user.local.email
+    else
+        a.navbar-brand(href='#') Project name

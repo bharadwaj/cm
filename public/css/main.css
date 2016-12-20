@@ -1,0 +1,55 @@
+body {
+  padding-top: 4rem;
+}
+
+.main-menu-div{
+    height:500px;
+}
+.game-profile-div{
+    height:500px;
+
+}
+.game-board-div{
+    background-color: #F0F0F0 ;
+    height:500px;
+}
+.game-timer-options-div{
+    font-size: 200%;
+    height:500px;
+}
+.secret-tabs-div{
+    height:500px;
+}
+
+.user-avatar{
+
+}
+
+
+
+.middle-section {
+	height: 800px;
+}
+.left-gap {
+	background-color: #ffffff;
+}
+.left-menu {
+	background-color: grey;
+}
+.center-content {
+	background-color: pink;
+}
+.right-gap {
+	background-color: #ffffff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #123451!important; 
+}
+.nav-pills>li>a {
+    border-radius: 4px;
+}
+.menu-bar {
+    background-color: pink;
+}

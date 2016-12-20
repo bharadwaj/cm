@@ -1,0 +1,36 @@
+html
+  head
+    base(href="/")
+    title= title
+    include partials/head.pug
+
+  body(ng-app='mainNgApp')
+
+    include home/navbar.pug
+
+    include home/container.pug
+
+    include home/footer.pug
+
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.min.js')
+
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js")
+
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/humanize-duration/3.10.0/humanize-duration.min.js")
+    script(src="js/libraries/angular-timer.min.js")
+
+    script(src="js/ngApp.js")
+    script(src="js/ngAppRoutes.js")
+    script(src="js/board/dragableDirective.js")
+    script(src="js/board/pieces/queenDirective.js")
+    script(src="js/avatar/playerAvatarDirective.js")
+   
+    ng-include(src="templates/game-board.html")
+    ng-include(src="templates/player-avatar-div.html")

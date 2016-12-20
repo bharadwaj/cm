@@ -1,0 +1,8 @@
+html
+  body
+    if user.local.email
+      p.id= user.local._id
+      p.name= user.local.fullname
+      p.email= user.local.email
+      p.password= user.local.password
+
