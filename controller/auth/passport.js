@@ -2,7 +2,7 @@
 var LocalStrategy    = require('passport-local').Strategy;
 
 // load up the user model
-var User       = require('../../model/user');
+var User       = require('../../model/User');
 
 //var configAuth = require('./auth');
 

@@ -1,15 +1,27 @@
 html
+  head
+    base(href="/")
+    title= title
+    include ../partials/head.pug
   body
     if message.length > 0
         p.message= message
-    form(action='/signup', method='post')
-      .form-group
-        label Email
-        input.form-control(type='text', name='email')
-      .form-group
-        label Fullname
-        input.form-control(type='text', name='fullname')
-      .form-group
-        label Password
-        input.form-control(type='password', name='password')
-      button.btn.btn-warning.btn-lg(type='submit') Signup
+    .container
+      .row
+        .col-md-4.main-menu-div
+        .col-md-4.main-menu-div
+            form(action='/signup', method='post')
+              .form-group
+                label Email
+                input.form-control(type='text', name='email')
+              .form-group
+                label Fullname
+                input.form-control(type='text', name='fullname')
+              .form-group
+                label Password
+                input.form-control(type='password', name='password')
+              button.btn.btn-warning.btn-lg(type='submit') Signup
+
+            p Existing User?
+            a(href='/login') Login Here
+        .col-md-4.main-menu-div

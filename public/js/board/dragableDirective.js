@@ -40,6 +40,9 @@ mainNgApp.directive('myDraggable', ['$document', 'mySocket', function( $document
         y = event.pageY - startY;
         x = event.pageX - startX;
 
+        scope.m = x
+        scope.n = y
+
         element.css({
           top: y + 'px',
           left:  x + 'px'

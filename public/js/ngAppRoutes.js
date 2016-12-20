@@ -11,6 +11,7 @@ mainNgApp.config(['$routeProvider', '$locationProvider', function($routeProvider
             templateUrl: 'templates/user-account-profile-tmpl.html',
             controller: 'gameUserCtrl'
         })
+        
     $locationProvider.html5Mode(true);
 
 }]);

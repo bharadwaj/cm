@@ -1,5 +1,8 @@
 nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse
     if user.local.email
-        a.navbar-brand(href='#')= user.local.email
+        a.navbar-brand(href='/')= user.local.email
+        p.navbar-text.navbar-right.pull-right
+            a(href="/logout" target="_self") Logout
     else
         a.navbar-brand(href='#') Project name
+
